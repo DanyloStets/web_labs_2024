@@ -1,0 +1,30 @@
+footer{
+    background: linear-gradient(#67C3F3, 40%, #5A98F2);
+    display: flex;
+    box-sizing: border-box;
+    max-width: 100% !important;
+    position: absolute;
+    left: 0;
+    right:0;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+}
+.right_blocks_footer{
+    margin-right: 10%;
+}
+.right_blocks_footer ul{
+    display: flex;
+}
+.right_blocks_footer li{
+    margin-right:170px;
+}
+.logo_footer{
+    margin-left:15%;
+}
+footer li{
+    color:white;
+    font-size: 20px;
+    margin-right:10%;
+}
