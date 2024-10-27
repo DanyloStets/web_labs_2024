@@ -2,21 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Books</title>
+    <title>AirStore</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="dark-background hide-element">
 
-</div>
-<div class="bad-request-modal hide-element">
-    <button id="close-modal">
-        <img src="img/close.png" alt="close-modal">
-    </button>
-    <p>
-        Not found such element by title <br>
-        please try again.
-    </p>
 </div>
 <header class="header">
     <div class="header-cont">
@@ -27,18 +18,6 @@
             </div>
             <nav class="navbar-menu">
                 <ul>
-                    <li>
-                        <a href="#">
-                            <img src="img/page.png">
-                            Create
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/editing.png">
-                            Edit
-                        </a>
-                    </li>
                     <li>
                         <select id="sortDropdown" class="sort-dropdown">
                             <option value="name">Sort by Name</option>
@@ -62,21 +41,32 @@
             <p>Name</p>
             <input type="text" id="nameInput" placeholder="Name">
             <p>Price</p>
-            <input type="text" id="priceInput" placeholder="Price">
+            <input type="number" id="priceInput" placeholder="Price" min=0>
             <p>Passanger</p>
-            <input type="text" id="pasInput" placeholder="Passanger">
-            <button>Submit</button>
+            <input type="number" id="pasInput" placeholder="Passanger" min=0>
+            <button id="submitButton">Submit</button>
         </div>
         <div class="count-block" id="count-block">
             <h2>Count total cost of books: </h2>
             <p class="total-cost"></p>
         </div>
     </aside>
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Edit Card</h2>
+          <label for="model">Model:</label>
+          <input type="text" id="model" name="model"><br><br>
+          <label for="countOfPassanger">Count of Passanger:</label>
+          <input type="number" id="countOfPassanger" name="countOfPassanger"><br><br>
+          <label for="price">Price:</label>
+          <input type="number" id="price" name="price"><br><br>
+          <button id="saveChanges">Save changes</button>
+        </div>
+      </div>
     <secion class="cards-container">
         <ul id="dataDisplay" class="item-card">
-
         </ul>
-
     </section>
 </main>
 <script type="module" src="js/js.js"></script>
