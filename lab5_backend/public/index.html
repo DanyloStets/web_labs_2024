@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AirStore</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="dark-background hide-element">
+
+</div>
+<header class="header">
+    <div class="header-cont">
+        <div class="left-header">
+            <div class="logo-container">
+                <img src="img/blockchain.png" alt="logo" class="logo-img">
+                <h1>Airplanes CRUD</h1>
+            </div>
+            <nav class="navbar-menu">
+                <ul>
+                    <li>
+                        <select id="sortDropdown" class="sort-dropdown">
+                            <option value="name">Sort by Name</option>
+                            <option value="price">Sort by Price</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-block">
+            <input type="text" id="searchInput" placeholder="Search">
+            <button id="searchButton">Search</button>
+            <button id="clearButton">Cancel</button>
+        </div>
+    </div>
+</header>
+<main>
+    <aside class="side-manager">
+        <div clas="create_card">
+            <h2>Create new Airplane</h2>
+            <p>Name</p>
+            <input type="text" id="nameInput" placeholder="Name">
+            <p>Price</p>
+            <input type="number" id="priceInput" placeholder="Price" min=0>
+            <p>Passanger</p>
+            <input type="number" id="pasInput" placeholder="Passanger" min=0>
+            <button id="submitButton">Submit</button>
+        </div>
+        <div class="count-block" id="count-block">
+            <h2>Count total cost of books: </h2>
+            <p class="total-cost"></p>
+        </div>
+    </aside>
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Edit Card</h2>
+          <label for="model">Model:</label>
+          <input type="text" id="model" name="model"><br><br>
+          <label for="countOfPassanger">Count of Passanger:</label>
+          <input type="number" id="countOfPassanger" name="countOfPassanger"><br><br>
+          <label for="price">Price:</label>
+          <input type="number" id="price" name="price"><br><br>
+          <button id="saveChanges">Save changes</button>
+        </div>
+      </div>
+    <secion class="cards-container">
+        <ul id="dataDisplay" class="item-card">
+        </ul>
+    </section>
+</main>
+<script type="module" src="js/js.js"></script>
+</body>
+</html>
