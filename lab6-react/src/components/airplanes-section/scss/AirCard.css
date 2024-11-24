@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.airplanes-card {
+  background-color: #F4F4FF;
+  font-family: "Manrope", sans-serif;
+  border: #dbdbe5 1px solid;
+  border-radius: 7px;
+  padding-top: 0.3rem;
+  display: flex;
+  width: 22%;
+}
+.airplanes-card img {
+  width: 45%;
+}
+.airplanes-card .airplanes-information {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.airplanes-card .airplanes-title {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: #090937;
+}
+.airplanes-card .airplanes-author {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: rgba(9, 9, 55, 0.6);
+  font-weight: bold;
+}
+.airplanes-card .airplanes-price {
+  color: #6251DD;
+}
