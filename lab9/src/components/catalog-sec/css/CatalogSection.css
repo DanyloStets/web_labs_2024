@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.catalog {
+  display: flex;
+  flex-wrap: wrap; /* Дозволяє переходити на новий рядок */
+  justify-content: space-between; /* Вирівнює елементи з відступами між ними */
+  padding: 0.5rem 2rem 4rem;
+  gap: 1rem; /* Відступ між елементами */
+}
+
+.catalog .airplane-container {
+  flex: 1 1 calc(25% - 1rem); /* 25% ширини контейнера мінус відступ */
+  box-sizing: border-box; /* Враховує padding у ширині */
+  margin: 0; /* Видаляє зайві відступи */
+}
+
+.catalog .airplane-container img {
+  max-width: 100%; /* Зображення адаптуються до контейнера */
+  height: auto; /* Пропорційна висота */
+}
+
