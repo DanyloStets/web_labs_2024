@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+.airplanes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(245, 245, 245, 0.4);
+  padding: 0 2rem 2rem;
+}
+.airplanes-container .airplanes {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto 7rem;
+  margin: 0 auto 4rem;
+}
+.airplanes-container .airplanes-footer {
+  margin: 0 auto 2rem;
+}
+.airplanes-container .view-more-btn {
+  border: none;
+  font-size: 1rem;
+  background: transparent;
+  font-family: "Manrope", sans-serif;
+  color: #EF6B4A;
+  cursor: pointer;
+  text-decoration: none;
+}
+.airplanes-container .view-more-btn:hover {
+  text-decoration: underline #EF6B4A;
+}
